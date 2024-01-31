@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMB- Cabins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    html {
+        height: 100%;
+
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+    p {
+        color: black
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+    }
+
+    .cabin_page {
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bg-foundation,
+    .bg-logs,
+    .bg-frame,
+    .bg-walls,
+    .bg-inside {
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .bgimg-1 {
+        background-image: url(images/cabin.JPG);
+        min-height: 850px;
+    }
+
+    .bgimg-2 {
+        background-image: url(images/chickens.JPG);
+        min-height: 1000px
+    }
+
+
+    .bg-foundation {
+        background-image: url(images/rock_drill.jpg);
+        min-height: 800px;
+    }
+
+    .bg-logs {
+        background-image: url(images/cabin_foundation.JPG);
+        min-height: 800px;
+    }
+
+    .bg-frame {
+        background-image: url(images/cabin_frame.jpg);
+        min-height: 800px;
+    }
+
+    .bg-walls {
+        background-image: url(images/cabin2.JPG);
+        min-height: 800px;
+    }
+
+    .bg-inside {
+        background-image: url(images/cabin_mags.JPG);
+        min-height: 800px;
+    }
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .caption span.border {
+        background-color: rgb(59, 59, 59);
+        border: 2px solid white;
+        border-width: 2px;
+        color: rgb(255, 255, 255);
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bg-foundation,
+        .bg-logs,
+        .bg-frame,
+        .bg-walls,
+        .bg-inside {
+            background-attachment: scroll;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <div class="drone" id="drone">
+            <img class="duck" id="duckie" src="images/ducksprite1.png" alt="duck">
+        </div>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+        <div class="caption">
+            <span class="border">Cabins</span>
+        </div>
+    </div>
+    <div class="cabin_page">
+        <div style="color: #777;background-color:white;text-align:center;padding-bottom: 10vh; padding-top: 3vh;">
+            <h3 style="text-align:center;">The Plan</h3>
+
+            Summer passed, and the temperature dropped quickly, just as we were ready to start our foundation work on
+            the
+            cabin. Pouring the concrete slab for the fireplace and doing masonry work below freezing would prevent
+            proper curing, so unfortunately this also meant that the main cabin would have to be put on hold for the
+            winter.
+            After our first 27 degree September night in the tent we realized that if we wanted to survive the winter in
+            New
+            Hampshire, we were going to need to build something small and do it fast. And so we spent about 3 weeks
+            building “The Shed”.
+
+        </div>
+
+        <div class="bg-foundation">
+            <div class="caption">
+                <span class="border"
+                    style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Foundation</span>
+            </div>
+        </div>
+
+        <div
+            style="color:rgb(0, 0, 0);background-color:#ffffff;text-align:center;padding-bottom: 10vh;padding-top: 3vh;">
+            <p>We decided it would be best to keep it simple and use 9 boulders as the foundation since the Shed is a
+                temporary home. We spent two days digging, moving, setting, and leveling the 300 - 600 lb rocks. We
+                drilled hole into the granite and cut steel pins to attached the cabin to the boulders.
+            </p>
+        </div>
+
+
+        <div class="bg-logs">
+            <div class="caption">
+                <span class="border"
+                    style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Logs</span>
+            </div>
+        </div>
+
+
+        <div
+            style="color:rgb(0, 0, 0);background-color:#ffffff;text-align:center;padding-bottom: 10vh;padding-top: 3vh;">
+            <p>We cut down some medium sized pines and milled 6, 16 foot sections to make a grid to hold up the cabin.
+                The boulders do not lie below the frost line, so some settling and shifting is likely to occur, but the
+                logs should distribute the weight well enough that the pins will keep the cabin from shifting
+                considerably.
+            </p>
+        </div>
+
+
+        <div class="bg-frame">
+            <div class="caption">
+                <span class="border"
+                    style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Frame</span>
+            </div>
+        </div>
+
+
+        <div
+            style="color:rgb(0, 0, 0);background-color:#ffffff;text-align:center;padding-bottom: 10vh;padding-top: 3vh;">
+            <p>A simple timber frame made of true 4x4s with 45 degree bracing.</p>
+        </div>
+
+
+        <div class="bg-walls">
+            <div class="caption">
+                <span class="border"
+                    style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Walls/Siding</span>
+            </div>
+        </div>
+
+        <div
+            style="color:rgb(0, 0, 0);background-color:#ffffff;text-align:center;padding-bottom: 10vh;padding-top: 3vh;">
+            <p>The plan was to make board and batten siding until we put up a half log piece and saw how good it looked.
+                It took about a week of cutting trees, peeling and milling logs to make enough half-log siding, but it
+                was well worth. We sealed the gaps with silicone based chinking, but the siding shrunk as it dried more
+                than the chinking could stretch so it will have to be reapplied. We applied a clear coat to give the
+                cabin a natural looking finish.</p>
+        </div>
+
+
+        <div class="bg-inside">
+            <div class="caption">
+                <span class="border"
+                    style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Inside</span>
+            </div>
+        </div>
+
+        <div style="position:relative;">
+            <div
+                style="color:rgb(0, 0, 0);background-color:#ffffff;text-align:center;padding-bottom: 10vh;padding-top: 3vh;">
+                <p>Downstairs in “The Shed” is a small kitchen area, a bed, a small couch, and a wood stove on a stone
+                    hearth. The loft is Shelby and Raven's domain, as well as some storage and a 55 gallon drum we fill
+                    with
+                    water to supply the kitchen sink via gravity. To light the place I made a low power 12V LED circuit
+                    connected to some deep cycle batteries. Anytime we need real power we use a generator. Above you can
+                    see
+                    light peeking through gaps between the upper logs that hadn't been sealed yet</p>
+            </div>
+        </div>
+
+        <div class="bgimg-2">
+            <div class="caption">
+                <span class="border">Cabin #2 under construction!</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

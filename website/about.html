@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMB- Cabins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: rgb(0, 0, 0);
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 500;
+        color: black
+    }
+
+    .bgimg-1,
+    .bg-Mike,
+    .bg-Shelby,
+    .bg-Raven {
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    .bgimg-1 {
+        background-image: url(images/WMB.JPG);
+        min-height: 100%;
+
+    }
+
+    .bg-Mike {
+        background-image: url(images/Mike_and_mom.jpg);
+        min-height: 800px;
+    }
+
+    .bg-Shelby {
+        background-image: url(images/logs.JPG);
+        min-height: 800px;
+    }
+
+    .bg-Raven {
+        background-image: url(images/raven_chickens.JPG);
+        min-height: 800px;
+    }
+
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .caption span.border {
+
+        border: 2px solid white;
+        border-width: 2px;
+        color: rgb(255, 255, 255);
+        padding: 18px;
+        font-size: 5vw;
+        letter-spacing: 10px;
+    }
+
+    h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+    }
+
+    .abouts {
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        padding-right: 10vw;
+        padding-left: 10vw;
+        text-align: center;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+
+        .bgimg-1,
+        .bg-Mike,
+        .bg-Shelby,
+        .bg-Raven {
+            background-attachment: scroll;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+
+
+
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span style="font-size: 2vw;" class="border">About Us</span>
+        </div>
+
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding-bottom: 10vh; padding-top: 3vh;">
+        <h3 style="text-align:center;">Who are the Wild Meadow Boys?</h3>
+
+        It's the summer of 2021. A the perfect time for a cabin-building/homesteading
+        adventure in the woods of Grafton, New Hampshire. I manage to rope in some long lost friends crazy enough to
+        join me on what ended up being one the most difficult and rewarding journeys of our lives.
+        <br><br>
+        The local townsfolk caught onto the crazy kids building a cabin in one summer on Wild Meadow Road. We made
+        lots of new friends, both two and four-legged, who shaped our journey across the stream on Wild Meadow Road. My
+        name is Mike, and I am joined by my good friends Shelby and Raven, but you can call us the Wild Meadow Boys.
+    </div>
+
+    <div class="bg-Mike">
+        <div class="caption">
+            <span class="border"
+                style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Mike</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="abouts">
+            <p>Former cancer biologist in Biotech.
+                Aspiring programmer/systems engineer.
+                <br>Loves to solve problems and create things. Will find a way to
+                make
+                it work.
+                <br>
+                Can't say no to friends and definitely can't resist a good swimming hole.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-Shelby">
+        <div class="caption">
+            <span class="border"
+                style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Shelby</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="abouts">
+            <p>Firemaster. Serial pb&j eater. Will beat you at your favorite game.
+                <br>
+                Talented contractor with a wide range of knowledge and skills. An elite carpet installer but the
+                guy can do it all.
+                <br>
+                Biggest flaw: Constantly scolds Mike and Raven for bringing home more animals.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-Raven">
+        <div class="caption">
+            <span class="border"
+                style="background-color:transparent;font-size:25px;color: #f7f7f7;text-shadow: 2px 2px 1px rgb(0, 0, 0);">Raven</span>
+        </div>
+    </div>
+
+    <div style="position:relative;">
+        <div class="abouts">
+            <p> Mother of chickens and all things furry.
+                <br>Loves to cook, which is great because Shelby and Mike love to
+                eat. Hopes to one day manage a restaurant of her own.
+                <br>
+                Pretends to not like Shelby and Mike's jokes.
+                <br>
+                Don't tell her she's not one of the boys cause she'll beat you up.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+.title_format{display:table-caption;}
+.container{
+    display: grid;
+    grid-template-columns: 30vw 1fr 18vw 18vw 10vw;
+    grid-template-rows: 20vh min-content min-content 10vh;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url(images/summer_stream.jpg);
+    background-position:center;
+    background-size: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    height: 12%;
+    align-items: center;
+}
+.logo{
+
+    width: 80px;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.white_font{
+    color:white;
+}   
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+.welcome{
+    padding-top: 25%;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.card a{
+    text-decoration: none;
+}
+h5{
+    margin: 0;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+h1{
+    color:#fff;
+    font-size: 5vw;
+}
+p{
+    color:#fff;
+    font-size: 11px;
+    line-height: 15px;
+    text-decoration: none;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border:0;
+    border-radius: 20px;
+    outline:none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.card{
+    display: inline-block;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    text-align: center;
+    word-wrap:normal;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 5%;
+}
+.card:hover{
+    transform: translateY(-10px);
+    text-decoration: none;
+}
+.card p{
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: 1vw;
+    word-wrap: normal;
+}
+.card1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(images/alita.JPG);
+}
+.card2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url(images/cabin5.JPG);
+}
+.card3{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-image: url(images/fall_stream.JPG);
+}
+.card4{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-image: url(images/mags_walking.jpg);
+}
+.details{
+    position: relative;
+    color: white;
+}
+.wrapper {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+}
+.drone{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  transition: transform 3800ms ease-out;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+}
+.duck {
+height: 100px;
+width: auto;
+position: absolute;
+animation: move_duck 1s steps(6) infinite ;
+}
+@keyframes move_duck{
+
+  from{
+    transform: translate3d(0px,0,0);
+  }
+  to{
+    transform: translate3d(-100%,0,0);
+  }
+}
+
+.projects_grid{
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 600px 500px 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-position:center;
+    background-size: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.project_title{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.project_images{
+    text-align: center; 
+    margin: auto;
+}
+h2{
+    text-align: center;
+
+}
+.jp{
+    align-self: center;
+    height: auto;
+    width: 30vw;
+    padding: 5px;
+}
+.journal_pic_block{
+display: flex;
+justify-content: center;
+}
+.journal_entry{
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
