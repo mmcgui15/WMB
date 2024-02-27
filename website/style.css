@@ -1,4 +1,130 @@
+/*General Themes */
+
+body,
+html {
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1{
+    color:#fff;
+    font-size: 5vw;
+}
+
+h2{
+    text-align: center;
+
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: black;
+}
+
+h5{
+    margin: 0;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+p{
+    color:#fff;
+    font-size: 11px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.p2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: black
+}
+
+/*button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border:0;
+    border-radius: 20px;
+    outline:none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+*/
+
+.card{
+    display: inline-block;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    text-align: center;
+    word-wrap:normal;
+    text-decoration: none;
+    margin: 5%;
+    min-height: 300px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+.card p{
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: 1vw;
+    word-wrap: normal;
+}
+
+.details{
+    position: relative;
+    color: white;
+}
+
+/*Nav Bar*/
+.navbar{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    height: 12%;
+    align-items: center;
+    padding-right: 5%;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+
+
+/*Page Specific Content*/
+
+/*Homepage*/
+
 .title_format{display:table-caption;}
+
 .container{
     display: grid;
     grid-template-columns: 30vw 1fr 18vw 18vw 10vw;
@@ -13,91 +139,23 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-.navbar{
-    grid-column: 1/6;
-    grid-row: 1/2;
-    height: 12%;
-    align-items: center;
-}
+
 .logo{
 
     width: 80px;
     cursor: pointer;
 }
-nav{
-    flex:1;
-    text-align: right;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 20px;
-}
+
 .white_font{
     color:white;
 }   
-nav ul li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 13px;
-}
+
 .welcome{
     padding-top: 25%;
     grid-column: 1/2;
     grid-row: 2/4;
 }
-.card a{
-    text-decoration: none;
-}
-h5{
-    margin: 0;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-h1{
-    color:#fff;
-    font-size: 5vw;
-}
-p{
-    color:#fff;
-    font-size: 11px;
-    line-height: 15px;
-    text-decoration: none;
-}
-button{
-    width: 180px;
-    color: #000;
-    font-size: 12px;
-    padding: 12px 0;
-    background: #fff;
-    border:0;
-    border-radius: 20px;
-    outline:none;
-    margin-top: 30px;
-    cursor: pointer;
-}
-.card{
-    display: inline-block;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s;
-    text-align: center;
-    word-wrap:normal;
-    text-decoration: none;
-    border-radius: 10px;
-    margin: 5%;
-}
-.card:hover{
-    transform: translateY(-10px);
-    text-decoration: none;
-}
-.card p{
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    font-size: 1vw;
-    word-wrap: normal;
-}
+
 .card1{
     grid-column: 3/4;
     grid-row: 2/3;
@@ -118,40 +176,314 @@ button{
     grid-row: 3/4;
     background-image: url(images/mags_walking.jpg);
 }
-.details{
-    position: relative;
-    color: white;
-}
-.wrapper {
-  width: max-content;
-  height: max-content;
-  position: absolute;
-}
-.drone{
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-  transition: transform 3800ms ease-out;
-  will-change: transform;
-  pointer-events: none;
-  z-index: 1;
-  position: absolute;
-}
-.duck {
-height: 100px;
-width: auto;
-position: absolute;
-animation: move_duck 1s steps(6) infinite ;
-}
-@keyframes move_duck{
 
-  from{
-    transform: translate3d(0px,0,0);
-  }
-  to{
-    transform: translate3d(-100%,0,0);
-  }
+
+/*about*/
+
+
+
+
+.bgimg-1,
+.bg-Mike,
+.bg-Shelby,
+.bg-Raven {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
+
+.bgimg-1 {
+    background-image: url(images/WMB.JPG);
+    min-height: 100%;
+
+}
+
+.bg-Mike {
+    background-image: url(images/Mike_and_mom.jpg);
+    min-height: 800px;
+}
+
+.bg-Shelby {
+    background-image: url(images/logs.JPG);
+    min-height: 800px;
+}
+
+.bg-Raven {
+    background-image: url(images/raven_chickens.JPG);
+    min-height: 800px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.caption span.border {
+
+    border: 2px solid white;
+    border-width: 2px;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    font-size: 5vw;
+    letter-spacing: 10px;
+}
+
+.abouts {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    text-align: center;
+}
+
+
+
+/*grafton*/
+
+
+/*Hogtoberfest*/
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    width: 100vw;
+    height: 90vh;
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.hogtober{
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.hogtober_logo{
+    display: block;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+.card_h2021{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-image: url(images/cabin5.JPG);
+}
+
+.card_h2022{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-image: url(images/cabin5.JPG);
+}
+
+.card_h2023{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(images/Hogtoberfest/back_of_shirt.jpg);
+}
+
+.card_h2024{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-image: url(images/cabin5.JPG);
+}
+
+/*Cabins - remaining css in html file*/
+
+
+
+p {
+    color: black
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
+
+.cabin_page {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bg-foundation,
+.bg-logs,
+.bg-frame,
+.bg-walls,
+.bg-inside {
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.bgimg-1 {
+    background-image: url(images/cabin.JPG);
+    min-height: 850px;
+}
+
+.bgimg-2 {
+    background-image: url(images/chickens.JPG);
+    min-height: 1000px
+}
+
+
+.bg-foundation {
+    background-image: url(images/rock_drill.jpg);
+    min-height: 800px;
+}
+
+.bg-logs {
+    background-image: url(images/cabin_foundation.JPG);
+    min-height: 800px;
+}
+
+.bg-frame {
+    background-image: url(images/cabin_frame.jpg);
+    min-height: 800px;
+}
+
+.bg-walls {
+    background-image: url(images/cabin2.JPG);
+    min-height: 800px;
+}
+
+.bg-inside {
+    background-image: url(images/cabin_mags.JPG);
+    min-height: 800px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.caption span.border {
+    background-color: rgb(59, 59, 59);
+    border: 2px solid white;
+    border-width: 2px;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.wrapper {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+  }
+  .drone{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    transition: transform 3800ms ease-out;
+    will-change: transform;
+    pointer-events: none;
+    z-index: 1;
+    position: absolute;
+  }
+  .duck {
+  height: 100px;
+  width: auto;
+  position: absolute;
+  animation: move_duck 1s steps(6) infinite ;
+  }
+  @keyframes move_duck{
+  
+    from{
+      transform: translate3d(0px,0,0);
+    }
+    to{
+      transform: translate3d(-100%,0,0);
+    }
+  }
+
+/*media querying*/
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bg-foundation,
+    .bg-logs,
+    .bg-frame,
+    .bg-walls,
+    .bg-inside,
+    .bg-Mike,
+    .bg-Raven,
+    .bg-Shelby {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-width: 640px){
+    .container2{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: min-content auto;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 5%;
+    }
+
+    .card_h2021{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    
+    .card_h2022{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    
+    .card_h2023{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .card_h2024{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+/*Unsorted*/
+
+
+
+
 
 .projects_grid{
 display: grid;
@@ -175,10 +507,7 @@ display: grid;
     text-align: center; 
     margin: auto;
 }
-h2{
-    text-align: center;
 
-}
 .jp{
     align-self: center;
     height: auto;

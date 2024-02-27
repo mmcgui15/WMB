@@ -8,7 +8,7 @@ var droneCenter = {
 var duck_test=0;
 function getOffset() {
   duck_test = document.getElementById("drone").getBoundingClientRect();
-  console.log('each 1 second...', duck_test.left);
+//  console.log('each 1 second...', duck_test.left);
 }
 
 
@@ -21,7 +21,7 @@ var max_counter = 20;
 var direction = 1; //0 == right, 1 == left
 window.addEventListener("mousemove", (e) => {
 let xPos = e.clientX;
-console.log(xPos, duck_test.left, direction);
+//console.log(xPos, duck_test.left, direction);
 
 if (xPos > duck_test.left && direction == 1){
 document.getElementById("duckie").src = "images/ducksprite_r.png";

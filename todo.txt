@@ -1,0 +1,15 @@
+WMB site todo
+
+
+-Resize/compress images
+-Media Query page
+-clean css stylesheet
+-combine about/grafton
+-hogtoberfest page
+-homepage
+-projects page
+	entomology
+	bridge/septic?
+-cabins page
+-remove styling from html
+-WMB logo (vector art?)
